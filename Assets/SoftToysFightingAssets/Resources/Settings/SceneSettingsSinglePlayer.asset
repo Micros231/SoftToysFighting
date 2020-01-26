@@ -1,0 +1,256 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a76ac32cdc1a42b4ea2c1fb6961563f8, type: 3}
+  m_Name: SceneSettingsSinglePlayer
+  m_EditorClassIdentifier: 
+  LevelSettings:
+    Levels:
+    - Name: LevelTest
+      IsAvailable: 1
+      Prefab: {fileID: 260469395871770317, guid: 1557a9b5661225c4d82766c93b8c5099,
+        type: 3}
+      LevelSprite: {fileID: 21300000, guid: 4d25e091745395049b3f4e7667f98579, type: 3}
+      EnemySettingsInLevel:
+        SpawnState: {fileID: 11400000, guid: df3f711a86018854ea0102aeab793b57, type: 2}
+        Enemies:
+        - Name: DogTest
+          IsAvailable: 1
+          Prefab: {fileID: 5080718719241614564, guid: 88c05baa048887043adcec49302b644c,
+            type: 3}
+          MaxHealthEnemy:
+            Name: 
+            _value: 50
+            _onChangeValue:
+              m_PersistentCalls:
+                m_Calls: []
+          MoveSpeedEnemy:
+            Name: 
+            _value: 5
+            _onChangeValue:
+              m_PersistentCalls:
+                m_Calls: []
+          TimeScaleAnimationEnemy:
+            Name: 
+            _value: 2
+            _onChangeValue:
+              m_PersistentCalls:
+                m_Calls: []
+          DamageHandEnemy:
+            Name: 
+            _value: 1
+            _onChangeValue:
+              m_PersistentCalls:
+                m_Calls: []
+          DamageLegEnemy:
+            Name: 
+            _value: 2
+            _onChangeValue:
+              m_PersistentCalls:
+                m_Calls: []
+          MaxHealthBoss:
+            Name: 
+            _value: 100
+            _onChangeValue:
+              m_PersistentCalls:
+                m_Calls: []
+          MoveSpeedBoss:
+            Name: 
+            _value: 6
+            _onChangeValue:
+              m_PersistentCalls:
+                m_Calls: []
+          TimeScaleAnimationBoss:
+            Name: 
+            _value: 2
+            _onChangeValue:
+              m_PersistentCalls:
+                m_Calls: []
+          DamageHandBoss:
+            Name: 
+            _value: 2
+            _onChangeValue:
+              m_PersistentCalls:
+                m_Calls: []
+          DamageLegBoss:
+            Name: 
+            _value: 3
+            _onChangeValue:
+              m_PersistentCalls:
+                m_Calls: []
+          DamageSuperBoss:
+            Name: 
+            _value: 6
+            _onChangeValue:
+              m_PersistentCalls:
+                m_Calls: []
+        AmountEnemiesInLevel: 10
+        MaxEnemiesAliveInLevel: 1
+    - Name: LevelTestNoBossManyNPC
+      IsAvailable: 1
+      Prefab: {fileID: 260469395871770317, guid: 1557a9b5661225c4d82766c93b8c5099,
+        type: 3}
+      LevelSprite: {fileID: 21300000, guid: 4d25e091745395049b3f4e7667f98579, type: 3}
+      EnemySettingsInLevel:
+        SpawnState: {fileID: 11400000, guid: 15362dff2f1dcf641981c2913bdef302, type: 2}
+        Enemies:
+        - Name: DogTest
+          IsAvailable: 1
+          Prefab: {fileID: 5080718719241614564, guid: 88c05baa048887043adcec49302b644c,
+            type: 3}
+          MaxHealthEnemy:
+            Name: 
+            _value: 10
+            _onChangeValue:
+              m_PersistentCalls:
+                m_Calls: []
+          MoveSpeedEnemy:
+            Name: 
+            _value: 4
+            _onChangeValue:
+              m_PersistentCalls:
+                m_Calls: []
+          TimeScaleAnimationEnemy:
+            Name: 
+            _value: 1.5
+            _onChangeValue:
+              m_PersistentCalls:
+                m_Calls: []
+          DamageHandEnemy:
+            Name: 
+            _value: 1
+            _onChangeValue:
+              m_PersistentCalls:
+                m_Calls: []
+          DamageLegEnemy:
+            Name: 
+            _value: 2
+            _onChangeValue:
+              m_PersistentCalls:
+                m_Calls: []
+          MaxHealthBoss:
+            Name: 
+            _value: 100
+            _onChangeValue:
+              m_PersistentCalls:
+                m_Calls: []
+          MoveSpeedBoss:
+            Name: 
+            _value: 6
+            _onChangeValue:
+              m_PersistentCalls:
+                m_Calls: []
+          TimeScaleAnimationBoss:
+            Name: 
+            _value: 2
+            _onChangeValue:
+              m_PersistentCalls:
+                m_Calls: []
+          DamageHandBoss:
+            Name: 
+            _value: 2
+            _onChangeValue:
+              m_PersistentCalls:
+                m_Calls: []
+          DamageLegBoss:
+            Name: 
+            _value: 3
+            _onChangeValue:
+              m_PersistentCalls:
+                m_Calls: []
+          DamageSuperBoss:
+            Name: 
+            _value: 6
+            _onChangeValue:
+              m_PersistentCalls:
+                m_Calls: []
+        AmountEnemiesInLevel: 50
+        MaxEnemiesAliveInLevel: 4
+    CurrentLevel:
+      Name: 
+      IsAvailable: 0
+      Prefab: {fileID: 0}
+      LevelSprite: {fileID: 0}
+      EnemySettingsInLevel:
+        SpawnState: {fileID: 0}
+        Enemies:
+        - Name: Dog
+          IsAvailable: 0
+          Prefab: {fileID: 0}
+          MaxHealthEnemy:
+            Name: 
+            _value: 0
+            _onChangeValue:
+              m_PersistentCalls:
+                m_Calls: []
+          MoveSpeedEnemy:
+            Name: 
+            _value: 0
+            _onChangeValue:
+              m_PersistentCalls:
+                m_Calls: []
+          TimeScaleAnimationEnemy:
+            Name: 
+            _value: 0
+            _onChangeValue:
+              m_PersistentCalls:
+                m_Calls: []
+          DamageHandEnemy:
+            Name: 
+            _value: 0
+            _onChangeValue:
+              m_PersistentCalls:
+                m_Calls: []
+          DamageLegEnemy:
+            Name: 
+            _value: 0
+            _onChangeValue:
+              m_PersistentCalls:
+                m_Calls: []
+          MaxHealthBoss:
+            Name: 
+            _value: 0
+            _onChangeValue:
+              m_PersistentCalls:
+                m_Calls: []
+          MoveSpeedBoss:
+            Name: 
+            _value: 0
+            _onChangeValue:
+              m_PersistentCalls:
+                m_Calls: []
+          TimeScaleAnimationBoss:
+            Name: 
+            _value: 0
+            _onChangeValue:
+              m_PersistentCalls:
+                m_Calls: []
+          DamageHandBoss:
+            Name: 
+            _value: 0
+            _onChangeValue:
+              m_PersistentCalls:
+                m_Calls: []
+          DamageLegBoss:
+            Name: 
+            _value: 0
+            _onChangeValue:
+              m_PersistentCalls:
+                m_Calls: []
+          DamageSuperBoss:
+            Name: 
+            _value: 0
+            _onChangeValue:
+              m_PersistentCalls:
+                m_Calls: []
+        AmountEnemiesInLevel: 0
+        MaxEnemiesAliveInLevel: 0
+    _buildIndex: 1

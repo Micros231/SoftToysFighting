@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <strings name="GameButton">PLAY</strings>
+  <strings name="ProfileButton">PROFILE</strings>
+  <strings name="SettingsButton">SETTINGS</strings>
+  <strings name="BackButton">BACK</strings>
+  <strings name="FirstContinueButton">CLICK TO CONTINUE</strings>
+  <strings name="GameView">GAME</strings>
+  <strings name="MainView">MAIN MENU</strings>
+  <strings name="ProfileView">PROFILE</strings>
+  <strings name="SettingsView">SETTINGS</strings>
+  <strings name="LanguageSettings">LANGUAGE:</strings>
+  <strings name="SoundsSettings">SOUNDS:</strings>
+  <strings name="MusicSettings">MUSIC:</strings>
+  <strings name="ControlSettings">CONTROL:</strings>
+  <strings name="Choose">CHOOSE</strings>
+  <strings name="QuitButton">QUIT</strings>
+  <strings name="GoToMenuButton">MENU</strings>
+  <strings name="ChoosePlayerButton">CHOOSE TOY</strings>
+  <strings name="PlayGameButton">PLAY GAME</strings>
+  <strings name="Restart">RESTART</strings>
+</resources>

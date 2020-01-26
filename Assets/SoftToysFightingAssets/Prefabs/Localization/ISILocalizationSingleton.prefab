@@ -1,0 +1,177 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1060665588862229580
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1060665588862229581}
+  - component: {fileID: 1060665588862229582}
+  m_Layer: 0
+  m_Name: ISILocalizationSingleton
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &1060665588862229581
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1060665588862229580}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1060665588862229582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1060665588862229580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1da43f1fa5f21bf41aeee87162581d46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_nextScene:
+    sceneAsset: {fileID: 0}
+  m_loadSceneDelay: 3
+  m_languages:
+  - isExpanded: 1
+    isBeingAutoTranslated: 0
+    translationProgress: 0
+    m_flag: {fileID: 2800000, guid: 23f0e7394e44c4d4b90efaf3f960978b, type: 3}
+    m_language: 0
+    m_localizedStrings:
+    - key: GameButton
+      value: PLAY
+    - key: ProfileButton
+      value: PROFILE
+    - key: SettingsButton
+      value: SETTINGS
+    - key: BackButton
+      value: BACK
+    - key: FirstContinueButton
+      value: CLICK TO CONTINUE
+    - key: GameView
+      value: GAME
+    - key: MainView
+      value: MAIN MENU
+    - key: ProfileView
+      value: PROFILE
+    - key: SettingsView
+      value: SETTINGS
+    - key: LanguageSettings
+      value: 'LANGUAGE:'
+    - key: SoundsSettings
+      value: 'SOUNDS:'
+    - key: MusicSettings
+      value: 'MUSIC:'
+    - key: ControlSettings
+      value: 'CONTROL:'
+    - key: Choose
+      value: CHOOSE
+    - key: QuitButton
+      value: QUIT
+    - key: GoToMenuButton
+      value: MENU
+    - key: ChoosePlayerButton
+      value: CHOOSE TOY
+    - key: PlayGameButton
+      value: PLAY GAME
+    - key: Restart
+      value: RESTART
+    m_localizedAudio: []
+    m_localizedSprites: []
+    m_languageName: English
+    m_languageCode: 
+  - isExpanded: 1
+    isBeingAutoTranslated: 0
+    translationProgress: 0
+    m_flag: {fileID: 2800000, guid: 80d14af81595cfd4cbd9533d44f88131, type: 3}
+    m_language: 8
+    m_localizedStrings:
+    - key: GameButton
+      value: "\u0418\u0413\u0420\u0410\u0422\u042C"
+    - key: ProfileButton
+      value: "\u041F\u0420\u041E\u0424\u0418\u041B\u042C"
+    - key: SettingsButton
+      value: "\u041E\u041F\u0426\u0418\u0418"
+    - key: BackButton
+      value: "\u041D\u0410\u0417\u0410\u0414"
+    - key: FirstContinueButton
+      value: "\u041D\u0410\u0416\u041C\u0418\u0422\u0415 \u0427\u0422\u041E\u0411\u042B
+        \u041F\u0420\u041E\u0414\u041E\u041B\u0416\u0418\u0422\u042C"
+    - key: GameView
+      value: "\u0418\u0413\u0420\u0410"
+    - key: MainView
+      value: "\u0413\u041B\u0410\u0412\u041D\u041E\u0415 \u041C\u0415\u041D\u042E"
+    - key: ProfileView
+      value: "\u041F\u0420\u041E\u0424\u0418\u041B\u042C"
+    - key: SettingsView
+      value: "\u041D\u0410\u0421\u0422\u0420\u041E\u0419\u041A\u0418"
+    - key: LanguageSettings
+      value: "\u042F\u0417\u042B\u041A:"
+    - key: SoundsSettings
+      value: "\u0417\u0412\u0423\u041A\u0418:"
+    - key: MusicSettings
+      value: "\u041C\u0423\u0417\u042B\u041A\u0410:"
+    - key: ControlSettings
+      value: "\u0423\u041F\u0420\u0410\u0412\u041B\u0415\u041D\u0418\u0415:"
+    - key: Choose
+      value: "\u0412\u042B\u0411\u0420\u0410\u0422\u042C"
+    - key: QuitButton
+      value: "\u0412\u042B\u0419\u0422\u0418"
+    - key: GoToMenuButton
+      value: "\u041C\u0415\u041D\u042E"
+    - key: ChoosePlayerButton
+      value: "\u0412\u042B\u0411\u0420\u0410\u0422\u042C \u0418\u0413\u0420\u0423\u0428\u041A\u0423"
+    - key: PlayGameButton
+      value: "\u041D\u0410\u0427\u0410\u0422\u042C \u0418\u0413\u0420\u0423"
+    - key: Restart
+      value: "\u0420\u0435\u0441\u0442\u0430\u0440\u0442"
+    m_localizedAudio: []
+    m_localizedSprites: []
+    m_languageName: Russian
+    m_languageCode: 
+  m_stringKeys:
+  - BackButton
+  - ChoosePlayerButton
+  - Choose
+  - ControlSettings
+  - FirstContinueButton
+  - GameButton
+  - GameView
+  - GoToMenuButton
+  - LanguageSettings
+  - MainView
+  - MusicSettings
+  - ProfileButton
+  - ProfileView
+  - QuitButton
+  - SettingsButton
+  - SettingsView
+  - SoundsSettings
+  - PlayGameButton
+  - Restart
+  m_audiosKeys: []
+  m_spriteKeys: []
+  m_stringKeysRange:
+    min: 0
+    max: 19
+  m_spriteKeysRange:
+    min: 0
+    max: 0
+  m_audioKeysRange:
+    min: 0
+    max: 0

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <strings name="GameButton">ИГРАТЬ</strings>
+  <strings name="ProfileButton">ПРОФИЛЬ</strings>
+  <strings name="SettingsButton">ОПЦИИ</strings>
+  <strings name="BackButton">НАЗАД</strings>
+  <strings name="FirstContinueButton">НАЖМИТЕ ЧТОБЫ ПРОДОЛЖИТЬ</strings>
+  <strings name="GameView">ИГРА</strings>
+  <strings name="MainView">ГЛАВНОЕ МЕНЮ</strings>
+  <strings name="ProfileView">ПРОФИЛЬ</strings>
+  <strings name="SettingsView">НАСТРОЙКИ</strings>
+  <strings name="LanguageSettings">ЯЗЫК:</strings>
+  <strings name="SoundsSettings">ЗВУКИ:</strings>
+  <strings name="MusicSettings">МУЗЫКА:</strings>
+  <strings name="ControlSettings">УПРАВЛЕНИЕ:</strings>
+  <strings name="Choose">ВЫБРАТЬ</strings>
+  <strings name="QuitButton">ВЫЙТИ</strings>
+  <strings name="GoToMenuButton">МЕНЮ</strings>
+  <strings name="ChoosePlayerButton">ВЫБРАТЬ ИГРУШКУ</strings>
+  <strings name="PlayGameButton">НАЧАТЬ ИГРУ</strings>
+  <strings name="Restart">Рестарт</strings>
+</resources>

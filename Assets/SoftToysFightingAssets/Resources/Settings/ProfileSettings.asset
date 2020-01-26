@@ -1,0 +1,160 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a409ad76df9da2842bbafe185cc51f0d, type: 3}
+  m_Name: ProfileSettings
+  m_EditorClassIdentifier: 
+  NickName: Player
+  Batteries: 0
+  Level: 0
+  Experience: 0
+  PlayerSettings:
+    Players:
+      array:
+      - Name: Dog
+        IsAvailable: 1
+        Prefab: {fileID: 8725486961740524964, guid: cd7643733346cdd4d89d3fe935f44ff4,
+          type: 3}
+        MaxHealth:
+          Name: 
+          _value: 0
+          _onChangeValue:
+            m_PersistentCalls:
+              m_Calls: []
+        MaxEnergy:
+          Name: 
+          _value: 0
+          _onChangeValue:
+            m_PersistentCalls:
+              m_Calls: []
+        MoveSpeed:
+          Name: 
+          _value: 0
+          _onChangeValue:
+            m_PersistentCalls:
+              m_Calls: []
+        AnimationTimeScale:
+          Name: 
+          _value: 0
+          _onChangeValue:
+            m_PersistentCalls:
+              m_Calls: []
+        DamageHand:
+          Name: 
+          _value: 0
+          _onChangeValue:
+            m_PersistentCalls:
+              m_Calls: []
+        DamageLeg:
+          Name: 
+          _value: 0
+          _onChangeValue:
+            m_PersistentCalls:
+              m_Calls: []
+        DamageSuper:
+          Name: 
+          _value: 0
+          _onChangeValue:
+            m_PersistentCalls:
+              m_Calls: []
+      - Name: Cat
+        IsAvailable: 1
+        Prefab: {fileID: 6868693350124163477, guid: 97e3e13917786a04686249e5e8a12bde,
+          type: 3}
+        MaxHealth:
+          Name: 
+          _value: 0
+          _onChangeValue:
+            m_PersistentCalls:
+              m_Calls: []
+        MaxEnergy:
+          Name: 
+          _value: 0
+          _onChangeValue:
+            m_PersistentCalls:
+              m_Calls: []
+        MoveSpeed:
+          Name: 
+          _value: 0
+          _onChangeValue:
+            m_PersistentCalls:
+              m_Calls: []
+        AnimationTimeScale:
+          Name: 
+          _value: 0
+          _onChangeValue:
+            m_PersistentCalls:
+              m_Calls: []
+        DamageHand:
+          Name: 
+          _value: 0
+          _onChangeValue:
+            m_PersistentCalls:
+              m_Calls: []
+        DamageLeg:
+          Name: 
+          _value: 0
+          _onChangeValue:
+            m_PersistentCalls:
+              m_Calls: []
+        DamageSuper:
+          Name: 
+          _value: 0
+          _onChangeValue:
+            m_PersistentCalls:
+              m_Calls: []
+    CurrentPlayer:
+      Name: PlayerTest
+      IsAvailable: 1
+      Prefab: {fileID: 8725486961740524964, guid: cd7643733346cdd4d89d3fe935f44ff4,
+        type: 3}
+      MaxHealth:
+        Name: 
+        _value: 100
+        _onChangeValue:
+          m_PersistentCalls:
+            m_Calls: []
+      MaxEnergy:
+        Name: 
+        _value: 100
+        _onChangeValue:
+          m_PersistentCalls:
+            m_Calls: []
+      MoveSpeed:
+        Name: 
+        _value: 6
+        _onChangeValue:
+          m_PersistentCalls:
+            m_Calls: []
+      AnimationTimeScale:
+        Name: 
+        _value: 2
+        _onChangeValue:
+          m_PersistentCalls:
+            m_Calls: []
+      DamageHand:
+        Name: 
+        _value: 1
+        _onChangeValue:
+          m_PersistentCalls:
+            m_Calls: []
+      DamageLeg:
+        Name: 
+        _value: 2
+        _onChangeValue:
+          m_PersistentCalls:
+            m_Calls: []
+      DamageSuper:
+        Name: 
+        _value: 6
+        _onChangeValue:
+          m_PersistentCalls:
+            m_Calls: []
