@@ -30,7 +30,7 @@ MonoBehaviour:
   m_version: 1
   m_description: 
   m_id: 4f9ebee5-4c96-4605-88ff-e1935760aa0d
-  m_lastModified: 132243382778399195
+  m_lastModified: 132245054451635897
 --- !u!114 &114013687224496156
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -448,7 +448,7 @@ MonoBehaviour:
   m_minimumOutputSocketsCount: 1
   m_graphId: 4f9ebee5-4c96-4605-88ff-e1935760aa0d
   m_id: d5051435-4476-4d5c-8b0b-0b7dbb9642b7
-  m_name: GoTo Soundy Portal
+  m_name: GoTo Soundy GameEvent
   m_notes: 
   ErrorNotListeningForAnyGameEvent: 0
   m_gameEvent: GoTo Soundy
@@ -882,7 +882,7 @@ MonoBehaviour:
   m_minimumOutputSocketsCount: 1
   m_graphId: 4f9ebee5-4c96-4605-88ff-e1935760aa0d
   m_id: 44785cb1-9222-4f76-81aa-33fefa5a96c8
-  m_name: GoTo Touchy Portal
+  m_name: GoTo Touchy GameEvent
   m_notes: 
   ErrorNotListeningForAnyGameEvent: 0
   m_gameEvent: GoTo Touchy
@@ -1206,7 +1206,7 @@ MonoBehaviour:
   m_minimumOutputSocketsCount: 1
   m_graphId: 4f9ebee5-4c96-4605-88ff-e1935760aa0d
   m_id: 20d000cd-ef35-4780-b018-ea865144ec69
-  m_name: GoTo Nody Portal
+  m_name: GoTo Nody GameEvent
   m_notes: 
   ErrorNotListeningForAnyGameEvent: 0
   m_gameEvent: GoTo Nody

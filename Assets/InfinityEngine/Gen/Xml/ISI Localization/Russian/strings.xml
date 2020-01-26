@@ -18,5 +18,6 @@
   <strings name="GoToMenuButton">МЕНЮ</strings>
   <strings name="ChoosePlayerButton">ВЫБРАТЬ ИГРУШКУ</strings>
   <strings name="PlayGameButton">НАЧАТЬ ИГРУ</strings>
-  <strings name="Restart">Рестарт</strings>
+  <strings name="Restart">РЕСТАРТ</strings>
+  <strings name="ChooseToy">ВЫБРАТЬ</strings>
 </resources>

@@ -91,6 +91,8 @@ MonoBehaviour:
       value: PLAY GAME
     - key: Restart
       value: RESTART
+    - key: ChooseToy
+      value: Choose
     m_localizedAudio: []
     m_localizedSprites: []
     m_languageName: English
@@ -139,7 +141,9 @@ MonoBehaviour:
     - key: PlayGameButton
       value: "\u041D\u0410\u0427\u0410\u0422\u042C \u0418\u0413\u0420\u0423"
     - key: Restart
-      value: "\u0420\u0435\u0441\u0442\u0430\u0440\u0442"
+      value: "\u0420\u0415\u0421\u0422\u0410\u0420\u0422"
+    - key: ChooseToy
+      value: "\u0412\u042B\u0411\u0420\u0410\u0422\u042C"
     m_localizedAudio: []
     m_localizedSprites: []
     m_languageName: Russian
@@ -164,11 +168,12 @@ MonoBehaviour:
   - SoundsSettings
   - PlayGameButton
   - Restart
+  - ChooseToy
   m_audiosKeys: []
   m_spriteKeys: []
   m_stringKeysRange:
-    min: 0
-    max: 19
+    min: 1
+    max: 20
   m_spriteKeysRange:
     min: 0
     max: 0

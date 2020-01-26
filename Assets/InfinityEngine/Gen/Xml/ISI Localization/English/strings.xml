@@ -19,4 +19,5 @@
   <strings name="ChoosePlayerButton">CHOOSE TOY</strings>
   <strings name="PlayGameButton">PLAY GAME</strings>
   <strings name="Restart">RESTART</strings>
+  <strings name="ChooseToy">Choose</strings>
 </resources>

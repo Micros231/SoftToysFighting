@@ -69,93 +69,128 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1060665588862229582, guid: ed5d8b0c8c021784f8625d20ebe4f5dd,
         type: 3}
+      propertyPath: m_stringKeys.Array.size
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1060665588862229582, guid: ed5d8b0c8c021784f8625d20ebe4f5dd,
+        type: 3}
       propertyPath: m_languages.Array.data[0].m_localizedStrings.Array.size
-      value: 19
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 1060665588862229582, guid: ed5d8b0c8c021784f8625d20ebe4f5dd,
         type: 3}
       propertyPath: m_languages.Array.data[1].m_localizedStrings.Array.size
-      value: 19
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 1060665588862229582, guid: ed5d8b0c8c021784f8625d20ebe4f5dd,
         type: 3}
-      propertyPath: m_languages.Array.data[0].m_localizedStrings.Array.data[18].key
-      value: Restart
+      propertyPath: m_stringKeys.Array.data[19]
+      value: ChooseToy
       objectReference: {fileID: 0}
     - target: {fileID: 1060665588862229582, guid: ed5d8b0c8c021784f8625d20ebe4f5dd,
         type: 3}
-      propertyPath: m_languages.Array.data[0].m_localizedStrings.Array.data[18].value
-      value: RESTART
+      propertyPath: m_stringKeysRange.min
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1060665588862229582, guid: ed5d8b0c8c021784f8625d20ebe4f5dd,
+        type: 3}
+      propertyPath: m_stringKeysRange.max
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 1060665588862229582, guid: ed5d8b0c8c021784f8625d20ebe4f5dd,
         type: 3}
       propertyPath: m_languages.Array.data[0].m_localizedStrings.Array.data[19].key
-      value: Re
-      objectReference: {fileID: 0}
-    - target: {fileID: 1060665588862229582, guid: ed5d8b0c8c021784f8625d20ebe4f5dd,
-        type: 3}
-      propertyPath: m_languages.Array.data[0].m_localizedStrings.Array.data[20].key
-      value: Res
-      objectReference: {fileID: 0}
-    - target: {fileID: 1060665588862229582, guid: ed5d8b0c8c021784f8625d20ebe4f5dd,
-        type: 3}
-      propertyPath: m_languages.Array.data[0].m_localizedStrings.Array.data[21].key
-      value: Rest
-      objectReference: {fileID: 0}
-    - target: {fileID: 1060665588862229582, guid: ed5d8b0c8c021784f8625d20ebe4f5dd,
-        type: 3}
-      propertyPath: m_languages.Array.data[0].m_localizedStrings.Array.data[22].key
-      value: Resta
-      objectReference: {fileID: 0}
-    - target: {fileID: 1060665588862229582, guid: ed5d8b0c8c021784f8625d20ebe4f5dd,
-        type: 3}
-      propertyPath: m_languages.Array.data[0].m_localizedStrings.Array.data[23].key
-      value: Restar
-      objectReference: {fileID: 0}
-    - target: {fileID: 1060665588862229582, guid: ed5d8b0c8c021784f8625d20ebe4f5dd,
-        type: 3}
-      propertyPath: m_languages.Array.data[0].m_localizedStrings.Array.data[24].key
-      value: Restart
-      objectReference: {fileID: 0}
-    - target: {fileID: 1060665588862229582, guid: ed5d8b0c8c021784f8625d20ebe4f5dd,
-        type: 3}
-      propertyPath: m_languages.Array.data[1].m_localizedStrings.Array.data[18].key
-      value: Restart
-      objectReference: {fileID: 0}
-    - target: {fileID: 1060665588862229582, guid: ed5d8b0c8c021784f8625d20ebe4f5dd,
-        type: 3}
-      propertyPath: m_languages.Array.data[1].m_localizedStrings.Array.data[18].value
-      value: "\u0420\u0435\u0441\u0442\u0430\u0440\u0442"
+      value: ChooseToy
       objectReference: {fileID: 0}
     - target: {fileID: 1060665588862229582, guid: ed5d8b0c8c021784f8625d20ebe4f5dd,
         type: 3}
       propertyPath: m_languages.Array.data[1].m_localizedStrings.Array.data[19].key
-      value: Re
+      value: ChooseToy
+      objectReference: {fileID: 0}
+    - target: {fileID: 1060665588862229582, guid: ed5d8b0c8c021784f8625d20ebe4f5dd,
+        type: 3}
+      propertyPath: m_languages.Array.data[0].m_localizedStrings.Array.data[20].key
+      value: Ch
       objectReference: {fileID: 0}
     - target: {fileID: 1060665588862229582, guid: ed5d8b0c8c021784f8625d20ebe4f5dd,
         type: 3}
       propertyPath: m_languages.Array.data[1].m_localizedStrings.Array.data[20].key
-      value: Res
+      value: Ch
+      objectReference: {fileID: 0}
+    - target: {fileID: 1060665588862229582, guid: ed5d8b0c8c021784f8625d20ebe4f5dd,
+        type: 3}
+      propertyPath: m_languages.Array.data[0].m_localizedStrings.Array.data[21].key
+      value: Cho
       objectReference: {fileID: 0}
     - target: {fileID: 1060665588862229582, guid: ed5d8b0c8c021784f8625d20ebe4f5dd,
         type: 3}
       propertyPath: m_languages.Array.data[1].m_localizedStrings.Array.data[21].key
-      value: Rest
+      value: Cho
+      objectReference: {fileID: 0}
+    - target: {fileID: 1060665588862229582, guid: ed5d8b0c8c021784f8625d20ebe4f5dd,
+        type: 3}
+      propertyPath: m_languages.Array.data[0].m_localizedStrings.Array.data[22].key
+      value: Choo
       objectReference: {fileID: 0}
     - target: {fileID: 1060665588862229582, guid: ed5d8b0c8c021784f8625d20ebe4f5dd,
         type: 3}
       propertyPath: m_languages.Array.data[1].m_localizedStrings.Array.data[22].key
-      value: Resta
+      value: Choo
+      objectReference: {fileID: 0}
+    - target: {fileID: 1060665588862229582, guid: ed5d8b0c8c021784f8625d20ebe4f5dd,
+        type: 3}
+      propertyPath: m_languages.Array.data[0].m_localizedStrings.Array.data[23].key
+      value: Choos
       objectReference: {fileID: 0}
     - target: {fileID: 1060665588862229582, guid: ed5d8b0c8c021784f8625d20ebe4f5dd,
         type: 3}
       propertyPath: m_languages.Array.data[1].m_localizedStrings.Array.data[23].key
-      value: Restar
+      value: Choos
+      objectReference: {fileID: 0}
+    - target: {fileID: 1060665588862229582, guid: ed5d8b0c8c021784f8625d20ebe4f5dd,
+        type: 3}
+      propertyPath: m_languages.Array.data[0].m_localizedStrings.Array.data[24].key
+      value: ChooseT
       objectReference: {fileID: 0}
     - target: {fileID: 1060665588862229582, guid: ed5d8b0c8c021784f8625d20ebe4f5dd,
         type: 3}
       propertyPath: m_languages.Array.data[1].m_localizedStrings.Array.data[24].key
-      value: Restart
+      value: ChooseT
+      objectReference: {fileID: 0}
+    - target: {fileID: 1060665588862229582, guid: ed5d8b0c8c021784f8625d20ebe4f5dd,
+        type: 3}
+      propertyPath: m_languages.Array.data[0].m_localizedStrings.Array.data[25].key
+      value: ChooseTo
+      objectReference: {fileID: 0}
+    - target: {fileID: 1060665588862229582, guid: ed5d8b0c8c021784f8625d20ebe4f5dd,
+        type: 3}
+      propertyPath: m_languages.Array.data[1].m_localizedStrings.Array.data[25].key
+      value: ChooseTo
+      objectReference: {fileID: 0}
+    - target: {fileID: 1060665588862229582, guid: ed5d8b0c8c021784f8625d20ebe4f5dd,
+        type: 3}
+      propertyPath: m_languages.Array.data[0].m_localizedStrings.Array.data[26].key
+      value: ChooseToy
+      objectReference: {fileID: 0}
+    - target: {fileID: 1060665588862229582, guid: ed5d8b0c8c021784f8625d20ebe4f5dd,
+        type: 3}
+      propertyPath: m_languages.Array.data[1].m_localizedStrings.Array.data[26].key
+      value: ChooseToy
+      objectReference: {fileID: 0}
+    - target: {fileID: 1060665588862229582, guid: ed5d8b0c8c021784f8625d20ebe4f5dd,
+        type: 3}
+      propertyPath: m_languages.Array.data[0].m_localizedStrings.Array.data[19].value
+      value: Choose
+      objectReference: {fileID: 0}
+    - target: {fileID: 1060665588862229582, guid: ed5d8b0c8c021784f8625d20ebe4f5dd,
+        type: 3}
+      propertyPath: m_languages.Array.data[1].m_localizedStrings.Array.data[18].value
+      value: "\u0420\u0415\u0421\u0422\u0410\u0420\u0422"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1060665588862229582, guid: ed5d8b0c8c021784f8625d20ebe4f5dd,
+        type: 3}
+      propertyPath: m_languages.Array.data[1].m_localizedStrings.Array.data[19].value
+      value: "\u0412\u042B\u0411\u0420\u0410\u0422\u042C"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed5d8b0c8c021784f8625d20ebe4f5dd, type: 3}
