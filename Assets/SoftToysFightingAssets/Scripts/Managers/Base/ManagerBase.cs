@@ -5,7 +5,7 @@ namespace Com.SoftToysFighting.Managers
 {
     public abstract class ManagerBase<T> : MonoBehaviour where T : SettingsBase
     {
-        protected T Settings { get; set; }
+        protected T Settings { get; private set; }
         private void Awake()
         {
             LoadSettings();

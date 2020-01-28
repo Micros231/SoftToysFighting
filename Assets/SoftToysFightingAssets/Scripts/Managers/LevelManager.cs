@@ -23,9 +23,9 @@ namespace Com.SoftToysFighting.Managers
         [SerializeField]
         private GameObject _prefabLevelChooseObject;
         [SerializeField]
-        private LevelChoosePresentor _selectedLevel;
+        private LevelPresentor _selectedLevel;
         [SerializeField]
-        private List<LevelChoosePresentor> _levelChoosePresentors;
+        private List<LevelPresentor> _levelChoosePresentors;
         
         protected override void InitManager()
         {
@@ -39,18 +39,18 @@ namespace Com.SoftToysFighting.Managers
             }
             foreach (var level in Settings.LevelSettings.Levels)
             {
-                LevelChoosePresentor levelChoosePresentor = 
-                    Instantiate(_prefabLevelChooseObject, _transformContainerLevels).GetComponent<LevelChoosePresentor>();
+                LevelPresentor levelChoosePresentor = 
+                    Instantiate(_prefabLevelChooseObject, _transformContainerLevels).GetComponent<LevelPresentor>();
                 _levelChoosePresentors.Add(levelChoosePresentor);
                 levelChoosePresentor.ImageBackground.sprite = level.LevelSprite;
-                levelChoosePresentor.LevelName = level.Name;
+                levelChoosePresentor.EntityName = level.Name;
                 if (level.IsAvailable)
                 {
-                    levelChoosePresentor.AvailableLevel();
+                    levelChoosePresentor.Available();
                 }
                 else
                 {
-                    levelChoosePresentor.NotAvailableLevel();
+                    levelChoosePresentor.Unavailable();
                 }
                 levelChoosePresentor.ButtonPlay.OnClick.OnTrigger.Event.AddListener(() =>
                 {
@@ -66,12 +66,12 @@ namespace Com.SoftToysFighting.Managers
                     {
                         if (levelChoose != levelChoosePresentor)
                         {
-                            levelChoose.DeselectLevel();
+                            levelChoose.Deselect();
                         }
                     }
                     if (levelChoosePresentor.IsSelected)
                     {
-                        levelChoosePresentor.DeselectLevel();
+                        levelChoosePresentor.Deselect();
                         _selectedLevel = null;
                         if (levelChoosePresentor.IsAvailable)
                         {
@@ -80,7 +80,7 @@ namespace Com.SoftToysFighting.Managers
                     }
                     else
                     {
-                        levelChoosePresentor.SelectLevel();
+                        levelChoosePresentor.Select();
                         _selectedLevel = levelChoosePresentor;
                         if (levelChoosePresentor.IsAvailable)
                         {
@@ -92,7 +92,7 @@ namespace Com.SoftToysFighting.Managers
                 });
                 if (level == Settings.LevelSettings.CurrentLevel)
                 {
-                    levelChoosePresentor.SelectLevel();
+                    levelChoosePresentor.Select();
                 }
             }
         }

@@ -5336,7 +5336,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 300, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7617741432361630918
 CanvasRenderer:
@@ -5380,16 +5380,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _isSelected: 0
   _isAvailable: 0
-  _levelName: 
+  _entityName: 
+  _imageForeground: {fileID: 4440910350758746217}
+  _imageBackground: {fileID: 7617741432420054323}
   _imageStandart: {fileID: 7617741432808909155}
   _imageSelected: {fileID: 7617741432516447699}
-  _imageBackground: {fileID: 7617741432420054323}
-  _imageForeground: {fileID: 4440910350758746217}
-  _textLevelName: {fileID: 7617741431250226365}
-  _buttonChooseLevel: {fileID: 7617741430723813572}
-  _buttonPlay: {fileID: 7617741430820449008}
+  _textEntityName: {fileID: 7617741431250226365}
   _colorAvailable: {r: 1, g: 1, b: 1, a: 0}
   _colorNotAvailable: {r: 0, g: 0, b: 0, a: 0.5882353}
+  _buttonChooseLevel: {fileID: 7617741430723813572}
+  _buttonPlay: {fileID: 7617741430820449008}
 --- !u!1 &7617741432420054333
 GameObject:
   m_ObjectHideFlags: 0
