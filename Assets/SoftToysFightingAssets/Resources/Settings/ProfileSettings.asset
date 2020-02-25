@@ -204,49 +204,49 @@ MonoBehaviour:
             m_PersistentCalls:
               m_Calls: []
     CurrentPlayer:
-      Name: Dog
+      Name: Rabbit
       IsAvailable: 1
-      Prefab: {fileID: 8725486961740524964, guid: cd7643733346cdd4d89d3fe935f44ff4,
+      Prefab: {fileID: 8671665956062530911, guid: 46cafdec8021c3848a9f3053e7480800,
         type: 3}
       MaxHealth:
-        Name: 
-        _value: 0
+        Name: MaxHealth
+        _value: 175
         _onChangeValue:
           m_PersistentCalls:
             m_Calls: []
       MaxEnergy:
-        Name: 
-        _value: 0
+        Name: MaxEnergy
+        _value: 70
         _onChangeValue:
           m_PersistentCalls:
             m_Calls: []
       MoveSpeed:
-        Name: 
-        _value: 0
+        Name: MoveSpeed
+        _value: 6
         _onChangeValue:
           m_PersistentCalls:
             m_Calls: []
       AnimationTimeScale:
-        Name: 
-        _value: 0
+        Name: AnimationTimeScale
+        _value: 1.7
         _onChangeValue:
           m_PersistentCalls:
             m_Calls: []
       DamageHand:
-        Name: 
-        _value: 0
+        Name: DamageHand
+        _value: 4
         _onChangeValue:
           m_PersistentCalls:
             m_Calls: []
       DamageLeg:
-        Name: 
-        _value: 0
+        Name: DamageLeg
+        _value: 5
         _onChangeValue:
           m_PersistentCalls:
             m_Calls: []
       DamageSuper:
-        Name: 
-        _value: 0
+        Name: DamageSuper
+        _value: 9
         _onChangeValue:
           m_PersistentCalls:
             m_Calls: []

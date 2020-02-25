@@ -8,7 +8,7 @@ namespace Com.SoftToysFighting.Person
     [RequireComponent(typeof(PersonMovement), typeof(PersonAnimatorDragonBones),(typeof(PersonAttacker)))]
     public class PersonController : MonoBehaviour
     {
-        #region Protected Fields
+        #region Protected Propeties
         protected PersonMovement PersonMovement { get; private set; }
         protected PersonAnimatorDragonBones PersonAnimator { get; private set; }
         protected PersonAttacker PersonAttacker { get; private set; }

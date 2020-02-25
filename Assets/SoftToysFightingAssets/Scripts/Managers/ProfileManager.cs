@@ -19,7 +19,7 @@ namespace Com.SoftToysFighting.Managers
         [SerializeField]
         private ToyPresentor _selectedToy;
         [SerializeField]
-        private ToyPresentor _visualizeToy;
+        private ToyPresentor _visualizedToy;
         [SerializeField]
         private List<ToyPresentor> _toyChoosePresentors;
         protected override void InitManager()
@@ -39,7 +39,7 @@ namespace Com.SoftToysFighting.Managers
                     Instantiate(_prefabToyChooseObject, _transformContainerLevels).GetComponent<ToyPresentor>();
                 _toyChoosePresentors.Add(toyPresentor);
                 toyPresentor.EntityName = toy.Name;
-                if (toy.IsAvailable)
+                if (toy.IsAvailable) 
                 {
                     toyPresentor.Available();
                 }
@@ -47,34 +47,31 @@ namespace Com.SoftToysFighting.Managers
                 {
                     toyPresentor.Unavailable();
                 }
-                VisualizeToyPresentor(false, toyPresentor);
+                toyPresentor.gameObject.SetActive(false);
                 if (toy == Settings.PlayerSettings.CurrentPlayer)
                 {
-                    toyPresentor.Select();
-                    _selectedToy = toyPresentor;
-                    _visualizeToy = _selectedToy;
-                    VisualizeToyPresentor(true, _visualizeToy);
+                    VisualizeToyPresentor(toyPresentor);
+                    Select(_visualizedToy);
                 }
             }
-            if (_visualizeToy == null)
+            if (_visualizedToy == null)
             {
-                _visualizeToy = _toyChoosePresentors.First();
-                VisualizeToyPresentor(true, _visualizeToy);
+                ToyPresentor toyPresentor = _toyChoosePresentors.FirstOrDefault(presentor => presentor.IsAvailable);
+                if (toyPresentor == null)
+                {
+                    VisualizeToyPresentor(_toyChoosePresentors.First());
+                }
+                else
+                {
+                    VisualizeToyPresentor(toyPresentor);
+                    Select(_visualizedToy);
+                }
+                
             }
-            Settings.SaveSettings();
         }
         public void SelectToy()
         {
-            if (_selectedToy != null)
-            {
-                _selectedToy.Deselect();
-            }
-            _visualizeToy.Select();
-            _selectedToy = _visualizeToy;
-            int indexToy = _toyChoosePresentors.IndexOf(_visualizeToy);
-            Settings.PlayerSettings.CurrentPlayer = Settings.PlayerSettings.Players[indexToy];
-            Settings.SaveSettings();
-            
+            Select(_visualizedToy);
         }
         public void MoveRight()
         {
@@ -83,22 +80,20 @@ namespace Com.SoftToysFighting.Managers
                 Debug.LogError($"{_toyChoosePresentors} is null");
                 return;
             }
-            int currentVisualizeIndex = _toyChoosePresentors.IndexOf(_visualizeToy);
-
-            VisualizeToyPresentor(false, _visualizeToy);
+            int currentVisualizeIndex = _toyChoosePresentors.IndexOf(_visualizedToy);
+            ToyPresentor nextPresentor;
 
             if (currentVisualizeIndex == _toyChoosePresentors.Count - 1)
             {
-                currentVisualizeIndex = 0;
-                _visualizeToy = _toyChoosePresentors.First();
+                nextPresentor = _toyChoosePresentors.First();
             }
             else
             {
                 currentVisualizeIndex++;
-                _visualizeToy = _toyChoosePresentors[currentVisualizeIndex];
+                nextPresentor = _toyChoosePresentors[currentVisualizeIndex];
             }
 
-            VisualizeToyPresentor(true, _visualizeToy);
+            VisualizeToyPresentor(nextPresentor);
         }
         public void MoveLeft()
         {
@@ -107,34 +102,53 @@ namespace Com.SoftToysFighting.Managers
                 Debug.LogError($"{_toyChoosePresentors} is null");
                 return;
             }
-            int currentVisualizeIndex = _toyChoosePresentors.IndexOf(_visualizeToy);
+            int currentVisualizeIndex = _toyChoosePresentors.IndexOf(_visualizedToy);
+            ToyPresentor nextPresentor;
 
-            VisualizeToyPresentor(false, _visualizeToy);
 
             if (currentVisualizeIndex == 0)
             {
-                currentVisualizeIndex = _toyChoosePresentors.Count - 1;
-                _visualizeToy = _toyChoosePresentors.Last();
+                nextPresentor = _toyChoosePresentors.Last();
                 
             }
             else
             {
                 currentVisualizeIndex--;
-                _visualizeToy = _toyChoosePresentors[currentVisualizeIndex];
+                nextPresentor = _toyChoosePresentors[currentVisualizeIndex];
             }
 
-            VisualizeToyPresentor(true, _visualizeToy);
+            VisualizeToyPresentor(nextPresentor);
         }
-        private void VisualizeToyPresentor(bool isVisualize, ToyPresentor presentor)
+        private void VisualizeToyPresentor(ToyPresentor toyPresentor)
         {
-            if (isVisualize)
+            if (toyPresentor == null)
             {
-                presentor.gameObject.SetActive(true);
+                throw new ArgumentNullException("toyPresentor", "ToyPresentor is null");
             }
-            else
+            if (_visualizedToy == null)
             {
-                presentor.gameObject.SetActive(false);
+                _visualizedToy = _toyChoosePresentors.First();
             }
+            ToyPresentor oldVisualizedToy = _visualizedToy;
+            oldVisualizedToy.gameObject.SetActive(false);
+            toyPresentor.gameObject.SetActive(true);
+            _visualizedToy = toyPresentor;
+        }
+        private void Select(ToyPresentor toyPresentor)
+        {
+            if (toyPresentor == null)
+            {
+                throw new ArgumentNullException("toyPresentor", "ToyPresentor is null");
+            }
+            if (_selectedToy != null)
+            {
+                _selectedToy.Deselect();
+            }
+            int indexToyPresentor = _toyChoosePresentors.IndexOf(toyPresentor);
+            Settings.PlayerSettings.CurrentPlayer = Settings.PlayerSettings.Players[indexToyPresentor];
+            toyPresentor.Select();
+            _selectedToy = toyPresentor;
+            Settings.SaveSettings();
         }
     }
 }
